@@ -53,6 +53,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+function toggleAnswer(element) {
+  const answer = element.nextElementSibling;
+  const buttonImg = element.querySelector(".toggle-button img"); 
+
+if (answer.style.display === "none" || answer.style.display === "") {
+  answer.style.display = "block";
+  buttonImg.src = "/img/Icon-Show Hide.png"; 
+  buttonImg.style.transform = "rotate(180deg)";
+} else {
+  answer.style.display = "none";
+  buttonImg.src = "/img/Icon-Show Hide.png"; 
+  buttonImg.style.transform = "rotate(0deg)";
+}
+}
 
 
 

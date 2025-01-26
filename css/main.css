@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
 }
@@ -10,8 +10,9 @@
 
 html {
   scroll-behavior: smooth;
-  background: #ffffff;
-  color: #000;
+  background: rgba(38, 33, 48, 1);
+
+  color: rgba(255, 255, 255, 1);
 }
 
 body {
@@ -114,7 +115,7 @@ a {
   width: 100%;
   z-index: 5;
 
-  background: rgba(25, 25, 25, 0.6);
+  background: rgba(38, 33, 48, 1);
 }
 .header__background {
   position: absolute;
@@ -126,7 +127,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: #161a17;
+  background: rgba(38, 33, 48, 1);
 }
 .header.is-open .header__background {
   left: 0;
@@ -171,7 +172,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-
+  padding: 12px 16px;
   position: relative;
 }
 
@@ -186,7 +187,7 @@ a {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  gap: 28px;
+  gap: 40px;
   padding: 0px 40px;
   top: 130px;
   position: absolute;
@@ -198,7 +199,7 @@ a {
   transition: 0.3s;
   z-index: 999;
 
-  background: #161a17;
+  background: rgba(38, 33, 48, 1);
 }
 .navigation__list.is-open {
   right: 0;
@@ -207,33 +208,18 @@ a {
   position: relative;
   text-decoration: none;
   transition: all 0.1s ease;
-  font-family: Comfortaa;
-  font-size: 12px;
+  font-family: Montserrat;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 26px;
-  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  color: #ffffff;
+
+  color: rgba(229, 228, 205, 1);
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
-  color: #ff4400;
-}
-.header__icon-home-img {
-  font-family: Comfortaa;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ff4400;
-}
 .header.is-open {
   background-color: transparent;
 }
@@ -275,7 +261,7 @@ a {
     width: auto;
     padding-block: 0;
     flex: 1;
-    gap: 30px;
+    gap: 40px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -283,11 +269,12 @@ a {
     padding-left: 109px;
   }
   .navigation__link {
-    font-family: Comfortaa;
-    font-size: 12px;
+    font-family: Montserrat;
+    font-size: 18px;
     font-weight: 500;
     line-height: 26px;
-    text-align: center;
+    letter-spacing: 0.01em;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
@@ -298,13 +285,13 @@ a {
 
 .home {
   width: 375px;
-  height: 748px;
+  height: 780px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/home/main\ Section.png");
-  padding: 237px 20px 0px;
+  background-image: url("/img/home/Section-1-Hero.png");
+  padding: 336px 16px 0px;
   margin: auto;
 }
 .home__wrapper {
@@ -312,431 +299,389 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.home__wrapper-two {
-}
 
 .home-title {
-  font-family: Climate Crisis;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 48px;
-  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 71.96px;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  color: #ffffff;
+  background: linear-gradient(90deg, #7ecbd0 0%, #3c9fb4 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .home-text {
-  font-family: Climate Crisis;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29.98px;
+  letter-spacing: 0.01em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #ffffff;
-  padding: 12px 0 52px;
+  color: rgba(88, 148, 174, 1);
 }
 .home-text-two {
-  color: #ffffff;
-  font-family: Comfortaa;
-  font-size: 20px;
+  font-family: Montserrat;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 26px;
-  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  padding: 44px 0 54px;
 }
 .home-container-button {
   display: flex;
   flex-direction: column;
-  gap: 17px;
-  padding-top: 30px;
+  gap: 24px;
 }
 .home-button {
-  font-family: Comfortaa;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 26px;
+  color: rgba(235, 254, 254, 1);
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.04em;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #0bab03;
-  width: 234px;
-  height: 59px;
+  width: 240px;
+  height: 62px;
+  background: radial-gradient(50% 50% at 50% 50%, #396f9b 0%, #3ca0b5 100%);
+  padding: 16px 0px;
+  border-radius: 999px;
   border: none;
-  border-radius: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(57, 111, 155, 1);
 }
 .home-button-two {
-  background: #0b7e05;
+  background: transparent;
+  border: 2px solid rgba(57, 111, 155, 1);
+  color: rgba(57, 111, 155, 1);
 }
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 734px;
-    background-image: url("/image/home/Main\ Section\ \(1\).png");
-    padding: 248px 227px 0px;
+    height: 980px;
+
+    background-image: url("/img/home/Section-1-Hero\ \(1\).png");
+    padding: 258px 786px 0px 72px;
     margin: auto;
   }
   .home__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .home__wrapper-two {
+    align-items: start;
   }
 
   .home-title {
-    font-family: Climate Crisis;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: right;
+    font-family: Poppins;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0.01em;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
   .home-text {
-    font-family: Climate Crisis;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: right;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
-    padding: 22px 0 76px;
   }
   .home-text-two {
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    width: 569px;
+    padding: 74px 0 50px;
   }
   .home-container-button {
     display: flex;
     flex-direction: row;
-    gap: 31px;
-    padding-top: 57px;
-  }
-  .home-button {
-    font-family: Comfortaa;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    background: #0bab03;
-    width: 234px;
-    height: 59px;
-    border: none;
-    border-radius: 20px;
-  }
-  .home-button-two {
-    background: #0b7e05;
+    gap: 32px;
   }
 }
 
 .about {
-  padding: 40px 16px;
+  padding: 56px 16px;
   width: 375px;
+  height: 864px;
+
   margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/about/Secrion-2-About\ \(1\).png");
 }
 .about-title {
-  font-family: Comfortaa;
-  font-size: 30px;
+  font-family: Poppins;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 57.6px;
+  line-height: 44px;
+  letter-spacing: 0.01em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
 }
 .about-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.01em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
-  padding: 15px 0 22px;
+  color: rgba(60, 159, 180, 1);
+  padding-left: 16px;
+  border-left: 2px solid rgba(60, 159, 180, 1);
+  margin: 16px 0 40px;
 }
 
 .feature-list {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 28px;
+  gap: 40px;
+  padding-left: 40px;
 }
 
-.feature {
-  width: 262px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: start;
-  font-family: Comfortaa;
-  font-size: 24px;
+.feature-title {
+  font-family: Poppins;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-.about-img {
-  overflow: hidden;
-  position: relative;
-  width: 375px;
-  height: 230px;
-  margin-left: -16px;
-  margin-top: 44px;
-}
-.about-img img {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 100%;
+.feature-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-top: 8px;
 }
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 28px 16px;
+    padding: 80px 72px;
     width: 1440px;
-    margin: auto;
+    height: 769px;
+
+    background-image: url("/img/about/Secrion-2-About.png");
+  }
+  .about-title-container {
     display: flex;
-    gap: 86px;
+    align-items: center;
+    justify-content: space-between;
   }
   .about-title {
-    font-family: Comfortaa;
+    font-family: Poppins;
     font-size: 48px;
     font-weight: 700;
-    line-height: 57.6px;
+    line-height: 72px;
+    letter-spacing: 0.01em;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
   .about-text {
-    font-family: Comfortaa;
+    font-family: Montserrat;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
+    font-weight: 500;
+    line-height: 40px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    width: 598px;
-
-    padding: 31px 0 48px;
+    padding-left: 24px;
+    margin: 0;
+    width: 670px;
   }
 
   .feature-list {
     display: flex;
     flex-direction: row;
-    align-items: start;
-    width: 636px;
-
-    gap: 40px;
     flex-wrap: wrap;
-  }
-
-  .feature {
-    width: 298px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
     align-items: start;
+    gap: 320px;
+    padding-left: 47px;
+    padding-top: 96px;
+    row-gap: 123px;
   }
-  .about-img {
-    overflow: hidden;
-    border: 13px solid #ffffff;
-    width: 706px;
-    height: 680px;
-
-    margin-left: 0px;
-    margin-right: -16px;
-    margin-top: -100px;
+  .feature-two {
+    padding-top: 21px;
   }
-  .about-img img {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
+  .feature-three {
+    padding-left: 290px;
   }
-}
-
-.gallery-button-container {
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  margin-right: 16px;
-}
-
-.gallery-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  -webkit-transition: scale 0.3s ease;
-  transition: scale 0.3s ease;
-}
-
-.gallery-button:hover {
-  scale: 120%;
-}
-
-.gallery {
-  margin: auto;
-  padding: 64px 0px 64px 16px;
-  width: 375px;
-}
-
-.gallery-title-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  margin: 0;
-  padding: 0;
-}
-.gallery-container-text {
-  padding-top: 30px;
-  padding-bottom: 34px;
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: uppercase;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.gallery__list {
-}
-
-.gallery__item {
-  width: 339px;
-  height: 84px;
-
-  border-radius: 50px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/image/gallery/1.png");
-
-  margin: 0 10px;
-  font-family: Climate Crisis;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  padding-top: 29px;
-  color: #ffffff;
-}
-.gallery__item-two {
-  background-image: url("/image/gallery/Rectangle\ 25.png");
-}
-.gallery__item-three {
-  background-image: url("/image/gallery/3.png");
-}
-.gallery__item-four {
-  background-image: url("/image/gallery/4.png");
-}
-.gallery__item-five {
-  background-image: url("/image/gallery/1\ \(1\).png");
-}
-.gallery__item-six {
-  background-image: url("/image/gallery/2.png");
-}
-.gallery__item-seven {
-  background-image: url("/image/gallery/3\ \(1\).png");
-}
-.gallery__item-eight {
-  background-image: url("/image/gallery/4\ \(1\).png");
-}
-.gallery__item-nine {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .gallery {
-    margin: auto;
-    padding: 64px 16px 135px 16px;
-    width: 1440px;
+  .feature-four {
+    padding-left: 40px;
   }
-
-  .gallery-title-text {
-    font-family: Comfortaa;
+  .feature-title {
+    font-family: Poppins;
     font-size: 24px;
     font-weight: 700;
-    line-height: 57.6px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
-  .gallery-container-text {
-    padding-top: 30px;
-    padding-bottom: 34px;
-  }
-
-  .gallery__item-nine {
-    display: flex;
-    width: 698px;
-    height: 84px;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/image/gallery/Rectangle\ 24.png");
-    font-family: Climate Crisis;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: center;
+  .feature-text {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 60px;
+    padding-top: 8px;
+    width: 278px;
+  }
+}
+
+.gallery {
+  margin: auto;
+  padding: 56px 16px;
+  width: 375px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+}
+
+.gallery__item {
+  width: 343px;
+
+  padding: 8px;
+  background: rgba(44, 37, 59, 1);
+  box-shadow: 1.71px 3.43px 3.43px 0px rgba(0, 0, 0, 0.1);
+
+  border-radius: 16px;
+}
+.gallery-item-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+.gallery-item-top-title {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.gallery-item-top-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background: linear-gradient(90deg, #7ecbd0 0%, #3c9fb4 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-top: 8px;
+}
+.gallery-item-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    margin: auto;
+    padding: 80px 72px;
+    width: 1440px;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 96px;
+    gap: 24px;
+  }
+
+  .gallery__item {
+    width: 416px;
+    height: 244px;
+    padding: 16px;
+  }
+  .gallery-item-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 24px;
+  }
+  .gallery-item-top-title {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .gallery-item-top-text {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .gallery-item-text {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
   }
 }
 .blog {
   margin: auto;
-  padding: 64px 16px;
   width: 375px;
-  height: 1386px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/image/blog/Tadım\ ve\ Atölyeler.png");
-}
-.blog-title-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  padding: 12px 0 35px;
-}
-.blog-img {
-  margin: auto;
+  padding: 56px 16px;
 }
 
 .blog__list {
@@ -744,516 +689,384 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  margin-top: 38px;
+  gap: 40px;
+  margin-top: 50px;
 }
 
 .blog-item {
-  width: 328px;
-  height: 307px;
-  border-radius: 50px;
-  background: #ffffff;
-
-  padding: 54px 20px 11px;
+  width: 343px;
+  height: 166px;
+  padding: 16px;
+  background: rgba(44, 37, 60, 1);
+  box-shadow: 1.71px 3.43px 3.43px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
 }
 .blog-item-title {
-  font-family: Climate Crisis;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-.blog-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.01em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 40px 0 23px;
+  background: linear-gradient(90deg, #7ecbd0 0%, #3c9fb4 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
-.blog-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 47px;
+.blog-text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding: 8px 0 0px;
 }
-.blog-img-one {
-  display: none;
-}
+
 @media screen and (min-width: 1200px) {
-  .blog-img-one {
-    display: flex;
-    margin-top: -370px;
-    margin-left: 600px;
-    margin-bottom: -90px;
-  }
   .blog {
     margin: auto;
-    padding: 71px 200px 0;
     width: 1440px;
-    height: 660px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/image/blog/Tadım\ ve\ Atölyeler\ \(1\).png");
-  }
-  .blog-title {
-    text-align: center;
-  }
-  .blog-title-text {
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 57.6px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    padding: 6px 0 22px;
-  }
-  .blog-img {
-    margin: auto;
+    padding: 84px 72px;
   }
 
   .blog__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 28px;
-    margin-top: 0px;
+    gap: 24px;
+    margin-top: 96px;
   }
 
   .blog-item {
-    width: 328px;
-    height: 307px;
-    border-radius: 50px;
-    background: #ffffff;
-
-    padding: 54px 20px 11px;
+    width: 636px;
+    height: 170px;
+    padding: 24px 32;
+    background: rgba(44, 37, 60, 1);
+    box-shadow: 1.71px 3.43px 3.43px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
   }
   .blog-item-title {
-    font-family: Climate Crisis;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    text-transform: uppercase;
   }
   .blog-text {
-    font-family: Comfortaa;
+    font-family: Montserrat;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    padding: 40px 0 23px;
-  }
-  .blog-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 47px;
-  }
-}
-.packages {
-  margin: auto;
-  width: 375px;
-  height: 561px;
-  padding: 49px 16px 40px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/image/packages/Sipariş\ ve\ Teslimat.png");
-}
-.packages-title {
-  font-family: Comfortaa;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-.packages-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding-top: 17px;
-}
-.packages-list {
-  padding-top: 46px;
-  padding-bottom: 30px;
-}
-.packages-item {
-  width: 227px;
-  height: 220px;
-  margin: 0 10px;
-}
-.packages-avatar {
-  margin: auto;
-}
-.packages-item-title {
-  font-family: Comfortaa;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding: 22px 0;
-}
-.packages-item-text {
-  font-family: Comfortaa;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-@media screen and (min-width: 1200px) {
-  .packages {
-    width: 1440px;
-    height: 433px;
-    padding: 0px 330px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/image/packages/Pacchetti\ e\ Abbonamenti.png");
-  }
-  .packages-title {
-    font-family: Comfortaa;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    text-align: center;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
-  .packages-text {
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+}
 
-    padding-top: 13px;
-  }
-}
 .reviews {
   width: 375px;
-  padding: 54px 0px;
+  padding: 56px 16px;
   margin: auto;
 }
-.reviews-title {
-  padding: 0 16px;
-  font-family: Comfortaa;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-.reviews-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding: 26px 16px 62px;
+.reviews-img {
+  width: 343px;
+  height: 249px;
+  margin: 56px 0 32px;
 }
 .reviews__list {
-  margin-bottom: 40px;
-}
-
-.reviews-item {
-  width: 231px;
-  height: 290px;
-
-  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .reviews-item-title {
-  font-family: Comfortaa;
-  font-size: 24px;
+  font-family: Poppins;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 28px;
-  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 23px 0 34px;
 }
 .reviews-item-text {
-  font-family: Comfortaa;
+  font-family: Montserrat;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
-  text-align: center;
+  letter-spacing: 0.01em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #505050;
+
+  padding: 8px 0 0 8px;
 }
 @media screen and (min-width: 1200px) {
   .reviews {
     width: 1440px;
-    padding: 74px 22px;
+    padding: 80px 72px;
     margin: auto;
   }
-  .reviews-title {
-    padding: 0px;
-    font-family: Comfortaa;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+  .reviews-container {
+    display: flex;
+    gap: 136px;
+    align-items: center;
+    padding-top: 96px;
   }
-  .reviews-text {
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    padding: 31px 0px 66px;
+  .reviews-img {
+    width: 744px;
+    height: 540px;
+    margin: 0px;
   }
   .reviews__list {
-    margin-bottom: 40px;
-  }
-
-  .reviews-item {
-    width: 231px;
-    height: 290px;
-
-    margin: 0 40px;
-  }
-}
-
-.testimonials {
-  width: 375px;
-  padding: 0px 16px;
-  margin: auto;
-}
-.testimonials-title {
-  font-family: Comfortaa;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 57.6px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-.testimonials-text {
-  padding: 13px 0 68px;
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.testimonials-list {
-  padding-top: 8px;
-}
-.testimonials-item {
-  width: 279px;
-  height: 366px;
-  margin: 0 12px;
-}
-.testimonials-item-img {
-  margin-left: 79px;
-}
-.testimonials-item-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.testimonials-item-text-span {
-  font-family: Climate Crisis;
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.testimonials-img {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .testimonials {
-    width: 1440px;
-    padding: 60px 0px 0 23px;
-    margin: auto;
-    display: flex;
-    gap: 46px;
-  }
-  .testimonials-title {
-    font-family: Comfortaa;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .testimonials-text {
-    padding: 13px 0 68px;
-    font-family: Comfortaa;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .testimonials-list {
-    padding-top: 8px;
-    width: 1014px;
-  }
-  .testimonials-item {
-    width: 279px;
-    height: 366px;
-    margin: 0 12px;
-  }
-  .testimonials-item-img {
-    margin-left: 79px;
-  }
-  .testimonials-item-text {
-    padding-top: 33px;
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .testimonials-item-text-span {
-    font-family: Climate Crisis;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .testimonials-img {
-    display: flex;
-  }
-}
-.contact {
-  padding: 42px 16px;
-  width: 375px;
-  margin: auto;
-}
-.contact-title {
-  font-family: Comfortaa;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 57.6px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-
-.contact-adress {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .contact {
-    padding: 76px 32px;
-    width: 1440px;
-    margin: auto;
-  }
-  .contact-title {
-    font-family: Comfortaa;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-
-  .contact-adress {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    gap: 24px;
-    font-family: Comfortaa;
-    font-size: 20px;
+    gap: 48px;
+  }
+
+  .reviews-item-title {
+    font-family: Poppins;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 28px;
-    text-align: right;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .reviews-item-text {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.contact {
+  padding: 65px 16px;
+  width: 375px;
+  margin: auto;
+}
+.contact-adress {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 32px;
+}
+.contact-adress-title {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.contact-adress-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+}
+.footer-adress {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+.contact-img {
+  width: 343px;
+  height: 178px;
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding: 80px 72px;
+    width: 1440px;
+    margin: auto;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 96px;
+  }
+  .contact-adress {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .contact-adress-title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .contact-adress-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .contact-img {
+    width: 526px;
+    height: 272px;
+  }
+}
+.faq {
+  margin: auto;
+  padding: 56px 16px;
+  width: 375px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 343px;
+}
+
+.faq-item {
+  width: 343px;
+  background: rgba(44, 37, 59, 1);
+  box-shadow: 1.71px 3.43px 3.43px 0px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background: linear-gradient(90deg, #7ecbd0 0%, #3c9fb4 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 8px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+@media screen and (min-width: 1200px) {
+  .faq {
+    margin: auto;
+    padding: 80px 72px;
+    width: 1440px;
+  }
+
+  .faq-container {
+    padding-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    width: 1296px;
+  }
+
+  .faq-item {
+    width: 1296px;
+
+    padding: 24px;
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .faq-answer {
+    display: none;
+    padding-top: 16px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 }
 .footer {
-  padding: 0 20px 40px;
+  padding: 40px 38px 40px;
 }
-.footer-container-top {
-  display: flex;
-  flex-direction: column;
 
-  align-items: center;
-  gap: 24px;
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #000000;
-}
-.footer-adress {
-  color: #000000;
-  text-decoration: none;
-}
-.footer-img {
-  margin: auto;
-}
 .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
-  gap: 28px;
+  gap: 32px;
 }
 .footer-wrapper {
   display: flex;
@@ -1261,29 +1074,31 @@ a {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  gap: 27px;
+  gap: 16px;
 }
 .footer-text {
-  font-family: Comfortaa;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.01em;
   text-align: left;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  color: #ff4400;
+
+  color: rgba(229, 228, 205, 1);
 
   text-align: center;
 }
 
 .footer-copyright {
-  font-family: Comfortaa;
-  font-size: 14px;
+  font-family: Montserrat;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -1293,27 +1108,22 @@ a {
   .footer {
     width: 1440px;
     margin: auto;
-    padding: 0 29px 39px;
-  }
-  .footer-container-top {
-    display: none;
+    padding: 64px 0px 34px;
   }
 
-  .footer-img {
-    display: none;
-  }
   .footer-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 240px;
+    gap: 32px;
     text-align: center;
   }
   .footer-text {
-    font-family: Comfortaa;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.01em;
     text-align: left;
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1322,34 +1132,36 @@ a {
   }
 
   .footer-copyright {
-    font-family: Comfortaa;
+    font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 }
 .policy-terms-container {
-  padding: 106px 15px 70px;
+  padding: 120px 16px 56px;
 }
-.policy-terms-text-title {
-  font-family: Comfortaa;
-  font-size: 20px;
+.policy-terms-container h1 {
+  font-family: Poppins;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 44px;
+  letter-spacing: 0.01em;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
 }
 
 .policy-terms-container p {
-  font-family: Comfortaa;
+  font-family: Nunito;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0.01em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -1358,10 +1170,11 @@ a {
 }
 
 .policy-terms-container h2 {
-  font-family: Comfortaa;
+  font-family: Nunito;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.01em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -1373,16 +1186,17 @@ a {
   list-style-type: disc;
 
   padding-left: 20px;
-  font-family: Comfortaa;
+  font-family: Nunito;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0.01em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 .policy-terms-container a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1390,12 +1204,52 @@ a {
   .policy-terms-container {
     padding: 116px 40px 112px;
   }
-  .policy-terms-text-title {
-    font-family: Comfortaa;
-    font-size: 24px;
+  .policy-terms-container h1 {
+    font-family: Poppins;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 72px;
+    letter-spacing: 0.01em;
     text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .policy-terms-container p {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding-top: 20px;
+  }
+
+  .policy-terms-container h2 {
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding-top: 28px;
+  }
+
+  .policy-terms-container ul {
+    list-style-type: disc;
+
+    padding-left: 20px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
