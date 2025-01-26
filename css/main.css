@@ -1,0 +1,1503 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Comfortaa:wght@300..700&display=swap");
+
+:root {
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #ffffff;
+  color: #000;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button:hover {
+  scale: 120%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+
+.header.is-open .header__background {
+  left: 0;
+}
+.header__button-wrapper {
+  margin-left: auto;
+}
+.header__icon {
+  display: none;
+}
+
+.header__icon-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.header__icon--menu {
+  display: block;
+}
+
+.header__icon-button.is-open .header__icon--menu {
+  display: none;
+}
+
+.header__icon-button.is-open .header__icon--close {
+  display: block;
+}
+
+.header {
+  height: 68px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+
+  background: rgba(25, 25, 25, 0.6);
+}
+.header__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+
+  z-index: -1;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+  background: #161a17;
+}
+.header.is-open .header__background {
+  left: 0;
+}
+.header__button-wrapper {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__icon {
+  display: none;
+}
+.header__icon-button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.header__icon--menu {
+  display: block;
+}
+
+.header__icon-button.is-open .header__icon--menu {
+  display: none;
+}
+
+.header__icon-button.is-open .header__icon--close {
+  display: block;
+}
+
+.navigation {
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+
+  position: relative;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  gap: 28px;
+  padding: 0px 40px;
+  top: 130px;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 100%;
+  height: 600px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 999;
+
+  background: #161a17;
+}
+.navigation__list.is-open {
+  right: 0;
+}
+.navigation__link {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s ease;
+  font-family: Comfortaa;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: #ff4400;
+}
+.header__icon-home-img {
+  font-family: Comfortaa;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ff4400;
+}
+.header.is-open {
+  background-color: transparent;
+}
+.navigation-img {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .navigation-img {
+    display: flex;
+  }
+  .header {
+    height: 78px;
+    padding: 0;
+  }
+  .navigation__item-desk {
+    display: none;
+  }
+  .header__icon-button {
+    display: none;
+  }
+  .header__button-wrapper {
+    width: auto;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .navigation {
+    display: flex;
+    width: 1440px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation__list {
+    background-color: transparent;
+    flex-direction: row;
+    width: 1440px;
+    position: static;
+    width: auto;
+    padding-block: 0;
+    flex: 1;
+    gap: 30px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 109px;
+  }
+  .navigation__link {
+    font-family: Comfortaa;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .header__icon-home-img {
+    display: none;
+  }
+}
+
+.home {
+  width: 375px;
+  height: 748px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/home/main\ Section.png");
+  padding: 237px 20px 0px;
+  margin: auto;
+}
+.home__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__wrapper-two {
+}
+
+.home-title {
+  font-family: Climate Crisis;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.home-text {
+  font-family: Climate Crisis;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+  padding: 12px 0 52px;
+}
+.home-text-two {
+  color: #ffffff;
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.home-container-button {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding-top: 30px;
+}
+.home-button {
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #0bab03;
+  width: 234px;
+  height: 59px;
+  border: none;
+  border-radius: 20px;
+}
+.home-button-two {
+  background: #0b7e05;
+}
+@media screen and (min-width: 1200px) {
+  .home {
+    width: 1440px;
+    height: 734px;
+    background-image: url("/image/home/Main\ Section\ \(1\).png");
+    padding: 248px 227px 0px;
+    margin: auto;
+  }
+  .home__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home__wrapper-two {
+  }
+
+  .home-title {
+    font-family: Climate Crisis;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .home-text {
+    font-family: Climate Crisis;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding: 22px 0 76px;
+  }
+  .home-text-two {
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 569px;
+  }
+  .home-container-button {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+    padding-top: 57px;
+  }
+  .home-button {
+    font-family: Comfortaa;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #0bab03;
+    width: 234px;
+    height: 59px;
+    border: none;
+    border-radius: 20px;
+  }
+  .home-button-two {
+    background: #0b7e05;
+  }
+}
+
+.about {
+  padding: 40px 16px;
+  width: 375px;
+  margin: auto;
+}
+.about-title {
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+.about-text {
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding: 15px 0 22px;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 28px;
+}
+
+.feature {
+  width: 262px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: start;
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.about-img {
+  overflow: hidden;
+  position: relative;
+  width: 375px;
+  height: 230px;
+  margin-left: -16px;
+  margin-top: 44px;
+}
+.about-img img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 28px 16px;
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    gap: 86px;
+  }
+  .about-title {
+    font-family: Comfortaa;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .about-text {
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 598px;
+
+    padding: 31px 0 48px;
+  }
+
+  .feature-list {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 636px;
+
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    width: 298px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+  }
+  .about-img {
+    overflow: hidden;
+    border: 13px solid #ffffff;
+    width: 706px;
+    height: 680px;
+
+    margin-left: 0px;
+    margin-right: -16px;
+    margin-top: -100px;
+  }
+  .about-img img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gallery-button-container {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-right: 16px;
+}
+
+.gallery-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  -webkit-transition: scale 0.3s ease;
+  transition: scale 0.3s ease;
+}
+
+.gallery-button:hover {
+  scale: 120%;
+}
+
+.gallery {
+  margin: auto;
+  padding: 64px 0px 64px 16px;
+  width: 375px;
+}
+
+.gallery-title-text {
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  padding: 0;
+}
+.gallery-container-text {
+  padding-top: 30px;
+  padding-bottom: 34px;
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  text-transform: uppercase;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.gallery__list {
+}
+
+.gallery__item {
+  width: 339px;
+  height: 84px;
+
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/gallery/1.png");
+
+  margin: 0 10px;
+  font-family: Climate Crisis;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  padding-top: 29px;
+  color: #ffffff;
+}
+.gallery__item-two {
+  background-image: url("/image/gallery/Rectangle\ 25.png");
+}
+.gallery__item-three {
+  background-image: url("/image/gallery/3.png");
+}
+.gallery__item-four {
+  background-image: url("/image/gallery/4.png");
+}
+.gallery__item-five {
+  background-image: url("/image/gallery/1\ \(1\).png");
+}
+.gallery__item-six {
+  background-image: url("/image/gallery/2.png");
+}
+.gallery__item-seven {
+  background-image: url("/image/gallery/3\ \(1\).png");
+}
+.gallery__item-eight {
+  background-image: url("/image/gallery/4\ \(1\).png");
+}
+.gallery__item-nine {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    margin: auto;
+    padding: 64px 16px 135px 16px;
+    width: 1440px;
+  }
+
+  .gallery-title-text {
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .gallery-container-text {
+    padding-top: 30px;
+    padding-bottom: 34px;
+  }
+
+  .gallery__item-nine {
+    display: flex;
+    width: 698px;
+    height: 84px;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/image/gallery/Rectangle\ 24.png");
+    font-family: Climate Crisis;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 60px;
+  }
+}
+.blog {
+  margin: auto;
+  padding: 64px 16px;
+  width: 375px;
+  height: 1386px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/blog/Tadım\ ve\ Atölyeler.png");
+}
+.blog-title-text {
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding: 12px 0 35px;
+}
+.blog-img {
+  margin: auto;
+}
+
+.blog__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 38px;
+}
+
+.blog-item {
+  width: 328px;
+  height: 307px;
+  border-radius: 50px;
+  background: #ffffff;
+
+  padding: 54px 20px 11px;
+}
+.blog-item-title {
+  font-family: Climate Crisis;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+.blog-text {
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 40px 0 23px;
+}
+.blog-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 47px;
+}
+.blog-img-one {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .blog-img-one {
+    display: flex;
+    margin-top: -370px;
+    margin-left: 600px;
+    margin-bottom: -90px;
+  }
+  .blog {
+    margin: auto;
+    padding: 71px 200px 0;
+    width: 1440px;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/image/blog/Tadım\ ve\ Atölyeler\ \(1\).png");
+  }
+  .blog-title {
+    text-align: center;
+  }
+  .blog-title-text {
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 57.6px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding: 6px 0 22px;
+  }
+  .blog-img {
+    margin: auto;
+  }
+
+  .blog__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 0px;
+  }
+
+  .blog-item {
+    width: 328px;
+    height: 307px;
+    border-radius: 50px;
+    background: #ffffff;
+
+    padding: 54px 20px 11px;
+  }
+  .blog-item-title {
+    font-family: Climate Crisis;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+  }
+  .blog-text {
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 40px 0 23px;
+  }
+  .blog-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 47px;
+  }
+}
+.packages {
+  margin: auto;
+  width: 375px;
+  height: 561px;
+  padding: 49px 16px 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/packages/Sipariş\ ve\ Teslimat.png");
+}
+.packages-title {
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+.packages-text {
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-top: 17px;
+}
+.packages-list {
+  padding-top: 46px;
+  padding-bottom: 30px;
+}
+.packages-item {
+  width: 227px;
+  height: 220px;
+  margin: 0 10px;
+}
+.packages-avatar {
+  margin: auto;
+}
+.packages-item-title {
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 22px 0;
+}
+.packages-item-text {
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+@media screen and (min-width: 1200px) {
+  .packages {
+    width: 1440px;
+    height: 433px;
+    padding: 0px 330px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/image/packages/Pacchetti\ e\ Abbonamenti.png");
+  }
+  .packages-title {
+    font-family: Comfortaa;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .packages-text {
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding-top: 13px;
+  }
+}
+.reviews {
+  width: 375px;
+  padding: 54px 0px;
+  margin: auto;
+}
+.reviews-title {
+  padding: 0 16px;
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+.reviews-text {
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 26px 16px 62px;
+}
+.reviews__list {
+  margin-bottom: 40px;
+}
+
+.reviews-item {
+  width: 231px;
+  height: 290px;
+
+  margin: 0 10px;
+}
+
+.reviews-item-title {
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 23px 0 34px;
+}
+.reviews-item-text {
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #505050;
+}
+@media screen and (min-width: 1200px) {
+  .reviews {
+    width: 1440px;
+    padding: 74px 22px;
+    margin: auto;
+  }
+  .reviews-title {
+    padding: 0px;
+    font-family: Comfortaa;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .reviews-text {
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding: 31px 0px 66px;
+  }
+  .reviews__list {
+    margin-bottom: 40px;
+  }
+
+  .reviews-item {
+    width: 231px;
+    height: 290px;
+
+    margin: 0 40px;
+  }
+}
+
+.testimonials {
+  width: 375px;
+  padding: 0px 16px;
+  margin: auto;
+}
+.testimonials-title {
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+.testimonials-text {
+  padding: 13px 0 68px;
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.testimonials-list {
+  padding-top: 8px;
+}
+.testimonials-item {
+  width: 279px;
+  height: 366px;
+  margin: 0 12px;
+}
+.testimonials-item-img {
+  margin-left: 79px;
+}
+.testimonials-item-text {
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.testimonials-item-text-span {
+  font-family: Climate Crisis;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.testimonials-img {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .testimonials {
+    width: 1440px;
+    padding: 60px 0px 0 23px;
+    margin: auto;
+    display: flex;
+    gap: 46px;
+  }
+  .testimonials-title {
+    font-family: Comfortaa;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .testimonials-text {
+    padding: 13px 0 68px;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .testimonials-list {
+    padding-top: 8px;
+    width: 1014px;
+  }
+  .testimonials-item {
+    width: 279px;
+    height: 366px;
+    margin: 0 12px;
+  }
+  .testimonials-item-img {
+    margin-left: 79px;
+  }
+  .testimonials-item-text {
+    padding-top: 33px;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .testimonials-item-text-span {
+    font-family: Climate Crisis;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .testimonials-img {
+    display: flex;
+  }
+}
+.contact {
+  padding: 42px 16px;
+  width: 375px;
+  margin: auto;
+}
+.contact-title {
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+
+.contact-adress {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding: 76px 32px;
+    width: 1440px;
+    margin: auto;
+  }
+  .contact-title {
+    font-family: Comfortaa;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .contact-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 24px;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+.footer {
+  padding: 0 20px 40px;
+}
+.footer-container-top {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 24px;
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+.footer-adress {
+  color: #000000;
+  text-decoration: none;
+}
+.footer-img {
+  margin: auto;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 28px;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 27px;
+}
+.footer-text {
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: #ff4400;
+
+  text-align: center;
+}
+
+.footer-copyright {
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1440px;
+    margin: auto;
+    padding: 0 29px 39px;
+  }
+  .footer-container-top {
+    display: none;
+  }
+
+  .footer-img {
+    display: none;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 240px;
+    text-align: center;
+  }
+  .footer-text {
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .footer-copyright {
+    font-family: Comfortaa;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+.policy-terms-container {
+  padding: 106px 15px 70px;
+}
+.policy-terms-text-title {
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+}
+
+.policy-terms-container p {
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding-top: 20px;
+}
+
+.policy-terms-container h2 {
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding-top: 28px;
+}
+
+.policy-terms-container ul {
+  list-style-type: disc;
+
+  padding-left: 20px;
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.policy-terms-container a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy-terms-container {
+    padding: 116px 40px 112px;
+  }
+  .policy-terms-text-title {
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.cookie-popup {
+  position: fixed;
+  bottom: 10px;
+  width: 375px;
+
+  padding: 20px;
+  background: rgba(13, 92, 9, 0.9);
+
+  box-shadow: 10px 10px 10px 0px #0000002e;
+
+  text-align: center;
+  z-index: 1000;
+
+  display: none;
+}
+
+.cookie-popup-text-two {
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #ffffff;
+}
+.cookie-button-container {
+  padding: 48px 0 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.cookie-button {
+  border: none;
+  border-radius: 5px;
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  width: 258px;
+  height: 74px;
+
+  border-radius: 50px;
+  background: rgba(255, 68, 0, 1);
+
+  padding: 24px 0px;
+
+  color: #000;
+}
+
+#accept-cookies {
+  background: rgba(13, 255, 0, 1);
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .cookie-popup-text-two {
+    font-family: Comfortaa;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    width: 722px;
+  }
+  .cookie-button-container {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .cookie-popup {
+    position: fixed;
+    bottom: 10px;
+    width: 1440px;
+
+    padding: 34px;
+    display: none;
+  }
+
+  .cookie-popup-container {
+    display: flex;
+  }
+}
