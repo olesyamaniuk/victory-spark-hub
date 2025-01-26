@@ -1261,10 +1261,8 @@ a {
   width: 375px;
 
   padding: 20px;
-  background: rgba(13, 92, 9, 0.9);
-
-  box-shadow: 10px 10px 10px 0px #0000002e;
-
+  background: rgba(44, 37, 60, 1);
+  box-shadow: 1.71px 3.43px 3.43px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
   z-index: 1000;
 
@@ -1272,49 +1270,48 @@ a {
 }
 
 .cookie-popup-text-two {
-  font-family: Comfortaa;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   color: #ffffff;
 }
 .cookie-button-container {
-  padding: 48px 0 0;
+  padding: 32px 0 0;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 .cookie-button {
-  border: none;
-  border-radius: 5px;
-  font-family: Comfortaa;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.04em;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  width: 258px;
-  height: 74px;
-
-  border-radius: 50px;
-  background: rgba(255, 68, 0, 1);
-
-  padding: 24px 0px;
-
-  color: #000;
+  color: rgba(255, 255, 255, 1);
+  width: 186px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(57, 111, 155, 1);
+  background: transparent;
+  box-shadow: 0px 4px 8px 0px rgba(124, 105, 78, 0.25);
+  color: rgba(57, 111, 155, 1);
 }
 
 #accept-cookies {
-  background: rgba(13, 255, 0, 1);
+  background: rgba(57, 111, 155, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .close-popup {
@@ -1326,15 +1323,16 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .cookie-popup-text-two {
-    font-family: Comfortaa;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    width: 722px;
+    width: 413px;
   }
   .cookie-button-container {
     padding: 0;
@@ -1345,13 +1343,14 @@ a {
   .cookie-popup {
     position: fixed;
     bottom: 10px;
-    width: 1440px;
+    width: 856px;
 
-    padding: 34px;
+    padding: 16px;
     display: none;
   }
 
   .cookie-popup-container {
     display: flex;
+    gap: 32px;
   }
 }
